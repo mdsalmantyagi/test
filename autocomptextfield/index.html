@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>autocompletetextfield</title>
+<meta charset="UTF-8">
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(function(){
+$("#name").autocomplete({
+source: 'insert.php';
+});
+});
+</script>
+</head>
+<body>
+<form method="POST" action="insert.php" enctype="multipart/form-data">
+Name<input type="text" name="name" id="name"><br><br>
+Email<input type="email" name="email" id="name"><br>
+</form>
+</body>
+</html>
