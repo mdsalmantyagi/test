@@ -1,18 +1,9 @@
 <?php
-
 $string = "salman";
-$new[] = "";
+$reverse[] = "";
 $length = strlen($string);
-
 for($i = 0; $i < $length; $i++){
-
-	
-	$new[] = $string[$i];
-	
+	$reverse[] = $string[$i];
 }
-
-$reverse=implode('', $new);
-echo $reverse;
-
-
+echo implode('', $reverse);
 ?>

@@ -1,6 +1,5 @@
 Primary Key
 #######################
-
 Primary key cannot have a NULL value.
 Each table can have only one primary key.
 By default, Primary key is clustered index, and the data in database table is physically organized in the sequence of clustered index.
@@ -11,7 +10,6 @@ We can't delete primary key value from the parent table which is used as a forei
 
 Unique Key
 #######################
-
 Unique Constraint may have a NULL value.
 Each table can have more than one Unique Constraint.
 By default, Unique key is a unique non-clustered index.
@@ -19,7 +17,6 @@ Unique Constraint can not be related with another table's as a Foreign Key.
 
 Foreign Key
 ########################
-
 Foreign key is a field in the table that is Primary key in another table.
 Foreign key can accept multiple null value.
 Foreign key do not automatically create an index, clustered or non-clustered. You can manually create an index on foreign key.
@@ -32,27 +29,19 @@ We can delete the foreign key value from the child table even though that refers
 
 Two Table Join Query
 #########################
-
 SELECT column(t1.column and t2.column) FROM t1 LEFT JOIN t2 ON t1.id=t2.id;
-
 or
-
 SELECT Orders.OrderID,Customer.CustomerName,Orders.OrdersDate FROM Orders INNER JOIN Customers ON Orders.customerID=Customers.CustomerId;
 
 Three Table Join Query
 #########################
-
 SELECT Orders.OrderID,Customers.CustomerName,Shipers.ShipperName From ((Orders INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID) INNER JOIN Shippers
 ON Orders.ShipperID = ShipperID);
 
-
-order by
+Order by
 ##########################
 order by just sort the value by default in increasing order (you can do in DESC or ASC)
 
-group by
+Group by
 ##########################
 group by select one name from multiple same name
-
-
-

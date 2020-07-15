@@ -7,15 +7,22 @@ for ($i=5; $i>=1; $i--)
 for ($j=1; $j<=$i; $j++)
 {
 	if($i%2==0){
-		
 		echo "* &nbsp &nbsp";
-	}else{
-		
+	}else{	
 echo "$i &nbsp &nbsp";
-
 }
 }
 echo "<br><br>";
 }
-
 ?>
+<!-- 
+5    5    5    5    5    
+
+*    *    *    *    
+
+3    3    3    
+
+*    *    
+
+1 
+  -->
